@@ -1,0 +1,16 @@
+1. In today's session we saw the importance of Amazon Elastic Kubernetes Service,Docker overview,Eksctl command installation and its working,Master Slave architecture in K8s ,creating cluster using CLI and WebUI,overview on PVC and PV ,Nodegroups and storage class
+2. EKS is a AWS service that is used to manage cluster on the top of AWS cloud.
+3. Eksctl cmd-launching and destroying a cluster on a single click 
+4. kubelet:- Manages the control plane components.(executes instruction) 
+5. KubeApi:-validate and configures data
+6.kubeproxy:-maintains network rules on nodes.
+7.kube scheduler:-Schedules pods
+8.--kubeconfig - Path to credentials to authenticate itself to the API server.
+Nodegroups can also be created through a cluster definition or config file,group of multiple or single worker node having the same instance type.
+9.With K8s Service, it is very easy to manage load balancing configuration. It helps pods to scale very easily.
+10.ELB is a purpose built service for distributing workloads.Elastic Load Balancing scales traffic to an application as demand changes over time. 
+11. Various cmd  are as follows:-
+>kubectl expose deployment myweb  --type=LoadBalancer --port=80
+>kubectl exec -it myweb-79bwr761e2k   bash  
+>kubectl scale  deployment  myweb  -replica=3
+and many more.
