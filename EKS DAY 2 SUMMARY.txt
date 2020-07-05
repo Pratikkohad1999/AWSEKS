@@ -1,0 +1,19 @@
+1. In today's session we saw the importance of LB types:- ALB,CLB,NLB,helm,overview on prometheus and grafana,Auto scaling,ECS,Fargate,container network interface,Flannel,overlay network,tiller,
+2. AWS Fargate manages the task execution. Each task that runs in Fargate comes with a dedicated (ENI) with a private IP address.
+3. CNI:-createS a generic plugin-based networking solution for containers.
+3.1 AWS CNI plugin allows connection between two or more isolated Pods, even when they are deployed in different nodes in the same cluster.
+4. kops helps you create, destroy, upgrade and maintain production-grade, highly available, Kubernetes clusters from the command line. 
+5. Helm(client cmd) manages kubernetes services, so powerful that it can be used to install any K8S service.Tiller(server cmd).
+6. launched a multi-tier architecture by creating pod with WordPress image and another pod with MySQL image and connected them with a load balancer and exposed WordPress.
+7. overlay network: allows pods to communicate back and forth on any node.
+8.kustomization cmd to run muitiple yaml code at one time but in seq.
+9.Metrics are particularly useful for building dashboards and alerts.
+10.Installation and configuration of helm to launch jenkins,grafana,prometheus in k8s.
+11.ASG:-Automatically manage ec2 instances
+12.DHCP :-Server that automatically provide and assigns IP addresses,gateway,and other parameters to client devices allowing them to use network services such as DNS, NTP, and any communication protocol based on UDP or TCP and soon.
+13.Concept of provisioners,identity providers,ROLE,IAM,ECS,EFS,LB and soon
+. Various cmd  are as follows:-
+>eksctl scale nodegroup --cluster lwcluster  --name  ng2  --nodes=3
+>kubectl get pods -n kubesystem
+>kubectl config view
+and many more.
